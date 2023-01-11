@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import UseCallBackExample from "./components/UseCallBackExample";
 import UseMemoExample from "./components/UseMemoExample";
 import UseRefExample from "./components/UseRefExample";
 import UseRefExample2 from "./components/UseRefExample2";
@@ -9,7 +10,7 @@ function App() {
     <div className="h-full">
       <Navbar />
       {/* <UseRefExample /> */}
-      <UseMemoExample />
+      <UseCallBackExample />
     </div>
   );
 }
