@@ -1,10 +1,10 @@
 import React, { useLayoutEffect, useState } from "react";
-import { useEffect } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useLocalStorage("theme", "");
 
   const handleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
