@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { useEffect } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ const Navbar = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const body = document.body;
     body.setAttribute("data-theme", theme);
   }, [theme]);
