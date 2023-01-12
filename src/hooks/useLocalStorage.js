@@ -6,13 +6,11 @@ const useLocalStorage = (key, initialValue) => {
   );
 
   const setValue = (value) => {
-    //check if is a finction
     const valueToStore =
       value instanceof Function ? value(localStorageValue) : value;
 
-    //set to state
     setLocalStorageValue(value);
-    // set to local storage
+
     window.localStorage.setItem(key, JSON.stringify(valueToStore));
   };
   return [localStorageValue, setValue];

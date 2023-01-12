@@ -7,12 +7,13 @@ export const HooksExample = () => {
   );
 
   if (loading === true) {
-    return <p>loading...</p>;
+    return <p>loading</p>;
   }
+
   return (
     <div>
-      {data.map((post) => (
-        <p key={post.id}>{post.title}</p>
+      {data.map((item) => (
+        <p key={item.id}>{item.title}</p>
       ))}
     </div>
   );
