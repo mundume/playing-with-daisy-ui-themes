@@ -23,13 +23,13 @@ const Navbar = () => {
       <div>
         <button
           type="button"
-          className="   my-6 rounded bg-gray-300 px-2 py-2 text-right text-[#282C34] transition-all hover:bg-gray-200"
+          className="   transition-scale-125 my-6 rounded bg-gray-300 px-2 py-2 text-right text-[#282C34] transition-all hover:bg-gray-200"
           onClick={handleTheme}
         >
           {theme === "dark" ? (
             <i>
               {" "}
-              <FiMoon className="h-5 w-5" />
+              <FiMoon className="w-5d h-5" />
             </i>
           ) : (
             <FiSun className="h-5 w-5" />
