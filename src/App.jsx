@@ -1,3 +1,5 @@
+import { HooksExample } from "./components/HooksExample";
+import HooksExample2 from "./components/HooksExample2";
 import Navbar from "./components/Navbar";
 import UseCallBackExample from "./components/UseCallBackExample";
 import UseMemoExample from "./components/UseMemoExample";
@@ -10,7 +12,7 @@ function App() {
     <div className="h-full">
       <Navbar />
       {/* <UseRefExample /> */}
-      <UseCallBackExample />
+      <HooksExample2 />
     </div>
   );
 }
